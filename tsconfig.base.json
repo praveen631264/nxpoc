@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nxpoc/praveensharedlib": ["libs/praveensharedlib/src/index.ts"],
+      "praveen-myshared-lib": ["libs/sharedlib/src/public-api.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
