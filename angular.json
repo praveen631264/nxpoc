@@ -353,6 +353,47 @@
         }
       }
     },
+    "praveen-core": {
+      "projectType": "library",
+      "root": "libs/praveen-core",
+      "sourceRoot": "libs/praveen-core/src",
+      "prefix": "nxpoc",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": ["dist/libs/praveen-core"],
+          "options": {
+            "project": "libs/praveen-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/praveen-core/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/praveen-core/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/praveen-core"],
+          "options": {
+            "jestConfig": "libs/praveen-core/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/praveen-core/src/**/*.ts",
+              "libs/praveen-core/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "praveensharedlib": {
       "projectType": "library",
       "root": "libs/praveensharedlib",
@@ -437,6 +478,7 @@
     }
   },
   "cli": {
+    "analytics": false,
     "defaultCollection": "@nrwl/angular",
     "packageManager": "npm"
   },

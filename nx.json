@@ -48,6 +48,9 @@
       "tags": [],
       "implicitDependencies": ["nxpocsample"]
     },
+    "praveen-core": {
+      "tags": []
+    },
     "praveensharedlib": {
       "tags": []
     },

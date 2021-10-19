@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@nxpoc/praveensharedlib": ["libs/praveensharedlib/src/index.ts"],
+      "@praveen.p/core": ["libs/praveen-core/src/index.ts"],
       "praveen-myshared-lib": ["libs/sharedlib/src/public-api.ts"]
     }
   },
