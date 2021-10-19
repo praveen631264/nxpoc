@@ -10,6 +10,7 @@ import { MainViewModule } from './pages/main-view/main-view.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    BrowserModule,
     AppRoutingModule,
     MainViewModule
   ],
